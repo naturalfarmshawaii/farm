@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+ background-color: white;
+ margin: 0 0 0 0;
+} 
+
+
+.content {
+ display: flex;
+ background-image: url(img/daikon2.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100vh;
+ align-items: center;
+}
+
+h1 {
+ font-size: 1.8em;
+ line-height: 1.2em;
+ text-shadow: 2px 2px 2px black;
+ color: white;
+ font-family: arial;
+ text-transform: uppercase;
+}
+
+p {
+ font-size: 1.2em;
+ line-height: 1em;
+ text-shadow: 1px 1px 1px grey;
+ color: black;
+ font-family: arial;
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #white;
+  padding: 0px;
+  flex: 50%;
+
+}
+
+.flex-item-right {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right ul {
+  list-style: none;
+  margin-right: 30px;
+  float: right;
+}
+.flex-item-right ul li {
+  display: inline; 
+}
+
+.flex-item-right ul li a {
+ padding: 0px 10px;
+ text-decoration: none;
+ font-family: arial;
+ color: black;
+ font-size: 1.2em;
+
+}
+
+.content-div {
+  padding: 30px;
+  background-image: url(img/white50.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+ text-align: center;
+}
+
+.responsiveimg {
+  width: 100%;
+  max-width: 500px;
+  float: left;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right ul {
+    float: none;
+  }
+ .responsiveimg {
+  float: none;
+ }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="flex-container">
+  <div class="flex-item-left"><a href="#"><img src="img/logo4.png" class="responsiveimg"></a></div>
+  <div class="flex-item-right">
+   <ul>
+     <li><a href="about.html">about</a></li>
+     <li><a href="mailto:naturalfarmshawaii@gmail.com" title="naturalfarmshawaii@gmail.com">email</a></li>
+     <li><a href="https://naturalfarmsofhawaii.blogspot.com/" target="_blank">blog</a></li>
+   </ul>
+  </div>
+</div>
+
+<div class="content">
+  <div class="content-div">
+<h1><b>NATURAL FOOD<br>NO SPRAYS<br>NO CHEMICALS</b></h1>
+<p>Is your food killing you?</p>
+<p><b>Join our newsletter <br>to order today.</b>
+ <form
+  action="https://formspree.io/f/xdoqjjzk"
+  method="POST"
+>
+  <label>
+       <input type="email" name="email" placeholder="Email:">
+  </label>
+  <input type="submit" value="Sign Up">
+</form></p>
+ </div>
+</div>
+
+</body>
+</html>
